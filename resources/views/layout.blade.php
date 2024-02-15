@@ -32,6 +32,14 @@
                         <a class="nav-link" href="contact">Contacts</a>
                     </li>
                 </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/signup">SignUp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/auth/login">SignIn</a>
+                    </li>
+                </ul>
             </div>
             </nav>
         <main>
