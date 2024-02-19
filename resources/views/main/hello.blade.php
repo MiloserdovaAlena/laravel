@@ -15,7 +15,7 @@
             <tr>
                 <th scope="row">{{$article['date']}}</th>
                 <td>{{$article['name']}}</td>
-                <td>{{$article['short_desc']}}</td>
+                <td>{{$article['shortDesc']}}</td>
                 <td>{{$article['desc']}}</td>
                 <td><a href="/galery/{{$article['full_image']}}"><img src="{{URL::asset('/images/'.$article['preview_image'])}}" alt="" height="100" width="100"></a></td>
             </tr>

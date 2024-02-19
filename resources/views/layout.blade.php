@@ -8,7 +8,15 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="/laravel-project/resources/views/main.css">
+        <!-- Styles -->
+        <style>
+            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+        </style>
+            <style>
+                body{
+                    font-family: 'Nunito', sans-serif;
+                }
+            </style>
     </head>
     <body>
       
@@ -32,7 +40,10 @@
                         <a class="nav-link" href="contact">Contacts</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/article/show">Articles</a>
+                        <a class="nav-link" href="/article">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/article/create">Create article</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
