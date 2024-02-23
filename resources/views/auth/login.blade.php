@@ -1,11 +1,7 @@
 @extends('layout')
 @section('content')
-<form action="/auth/signUp" method="post">
+<form action="/auth/signIn" method="post">
   @csrf
-  <div class="form-group">
-    <label for="exampleInputPassword1">Name</label>
-    <input name="name" type="text" class="form-control" id="" placeholder="Enter name">
-  </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
     <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">

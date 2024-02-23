@@ -15,7 +15,7 @@ use App\Http\Controllers\ArticleController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::resource('article', ArticleController::class);
+Route::resource('article', ArticleController::class)->middleware('auth:sanctum');
 
 
 //Route::group(['prefix'=>'/article', 'middleware' => 'auth'], function(){
@@ -24,9 +24,14 @@ Route::resource('article', ArticleController::class);
     //Route::get('/store', [ArticleController::class, 'store']);
 //});
 
+//Auth
+Route::get('/auth/create', [AuthController::class, 'create']);
+Route::post('/auth/signUp', [AuthController::class, 'signUp']);
+Route::get('/auth/login', [AuthController::class, 'login'])->name('login');
+Route::post('/auth/signIn', [AuthController::class, 'customLogin']);
+Route::get('/auth/logout', [AuthController::class, 'logout']);
 
-Route::get('/signup', [AuthController::class, 'create']);
-Route::post('/auth/login', [AuthController::class, 'signUp']);
+
 Route::get('/', [MainController::class, 'index']);
 Route::get('/galery/{full_image}', [MainController::class, 'show']);
 
